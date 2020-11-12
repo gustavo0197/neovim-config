@@ -11,6 +11,15 @@ Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 
 Plug 'ervandew/supertab' " Suggestions
 
+" Intellisense and syntax highlighting
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+" TypeScript and tsx support
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+Plug 'ctrlpvim/ctrlp.vim' " File searcher
+
 " Some themes
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim'
@@ -56,3 +65,11 @@ let g:airline_powerline_fonts = 1
 " Supertab config
 
 let g:SuperTabDefaultCompletionType = '<c-n>'
+
+
+" ctrl p config
+
+" Ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
+
