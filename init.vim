@@ -20,6 +20,8 @@ Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'ctrlpvim/ctrlp.vim' " File searcher
 
+Plug 'tpope/vim-surround'
+
 " Some themes
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim'
