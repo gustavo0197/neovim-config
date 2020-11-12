@@ -20,7 +20,11 @@ Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'ctrlpvim/ctrlp.vim' " File searcher
 
-Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
+
+Plug 'jiangmiao/auto-pairs' " Complete '', (), {} or []
+
+Plug 'preservim/nerdcommenter' " Create comments
 
 " Some themes
 Plug 'joshdick/onedark.vim'
