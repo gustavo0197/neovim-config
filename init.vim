@@ -16,13 +16,12 @@ let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', '
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'ctrlpvim/ctrlp.vim' " File searcher
-
-" Plug 'tpope/vim-surround'
-
+Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs' " Complete '', (), {} or []
 Plug 'preservim/nerdcommenter' " Create comments
 Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
+Plug 'mattn/emmet-vim' " Emmet for html
 
 " Some themes
 Plug 'joshdick/onedark.vim'
@@ -37,7 +36,7 @@ let g:mapleader = ' ' " Use space as leader
 "Save using leader + s
 nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>qa :qa!<CR>
+nnoremap <leader>' :qa!<CR>
 
 " Searcher mappings 
 map /  <Plug>(incsearch-forward)
@@ -86,3 +85,5 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 
+" emmet config
+" let g:user_emmet_leader_key='<C-Z>'
