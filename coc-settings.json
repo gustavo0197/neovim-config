@@ -6,7 +6,9 @@
     "json",
     "javascriptreact",
     "typescript.tsx",
-    "html"
+    "html",
+    "scss",
+    "css"
   ],
   "coc.preferences.diagnostic.virtualText": true,
   "coc.preferences.formatOnInsertLeave": true,
@@ -16,6 +18,8 @@
     "typescript",
     "typescriptreact",
     "javascriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "scss",
+    "css"
   ]
 }

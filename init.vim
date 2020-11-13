@@ -48,7 +48,8 @@ nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
 set title
 set number
-
+set nobackup
+set nowritebackup
 set cursorline
 set colorcolumn=120
 
