@@ -25,7 +25,8 @@ Plug 'mattn/emmet-vim' " Emmet for html
 
 " Some themes
 Plug 'joshdick/onedark.vim'
-Plug 'dracula/vim'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
@@ -65,7 +66,8 @@ set spelllang=en,es
 
 set termguicolors
 set background=dark
-colorscheme dracula
+let g:one_allow_italics = 1
+colorscheme one
 set updatetime=250
 
 " Nerd tree config
