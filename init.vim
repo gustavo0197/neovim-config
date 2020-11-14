@@ -27,6 +27,7 @@ Plug 'mattn/emmet-vim' " Emmet for html
 Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rakr/vim-one'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
 
@@ -67,7 +68,7 @@ set spelllang=en,es
 set termguicolors
 set background=dark
 let g:one_allow_italics = 1
-colorscheme one
+colorscheme ayu
 set updatetime=250
 
 " Nerd tree config
@@ -93,3 +94,5 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 
 " emmet config
 " let g:user_emmet_leader_key='<C-Z>'
+
+
