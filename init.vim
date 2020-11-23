@@ -40,6 +40,7 @@ let g:mapleader = ' ' " Use space as leader
 nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>' :qa!<CR>
+nnoremap <leader>tn :tabnew<CR>
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
