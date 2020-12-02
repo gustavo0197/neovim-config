@@ -23,6 +23,7 @@ Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'joukevandermaas/vim-ember-hbs'
 
 " Some themes
 Plug 'joshdick/onedark.vim'
