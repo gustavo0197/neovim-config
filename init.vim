@@ -99,6 +99,13 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 let g:move_map_keys = 0
 map <C-Down> <Plug>MoveBlockDown
 map <C-Up> <Plug>MoveBlockUp
+
+" Git Gutter
+let g:gitgutter_highlight_linenrs = 1
+nnoremap <leader>hf :GitGutterFold<CR>
+nnoremap <leader>hlh :GitGutterLineHighlightsToggle<CR>
+nnoremap <leader>hlnh :GitGutterLineNrHighlightsToggle<CR>
+
 " emmet config
 " let g:user_emmet_leader_key='<C-Z>'
 
