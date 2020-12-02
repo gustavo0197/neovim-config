@@ -23,6 +23,7 @@ Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'matze/vim-move'
 
 " Some themes
 Plug 'joshdick/onedark.vim'
@@ -94,6 +95,9 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 
+let g:move_map_keys = 0
+map <C-Down> <Plug>MoveBlockDown
+map <C-Up> <Plug>MoveBlockUp
 " emmet config
 " let g:user_emmet_leader_key='<C-Z>'
 
