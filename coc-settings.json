@@ -10,6 +10,8 @@
     "scss",
     "css"
   ],
+  "coc.preferences.enableFloatHighlight": true,
+  "coc.preferences.floatActions": true,
   "coc.preferences.diagnostic.virtualText": true,
   "coc.preferences.formatOnInsertLeave": true,
   "prettier.requireConfig": true,

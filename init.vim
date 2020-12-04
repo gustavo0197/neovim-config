@@ -31,6 +31,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'rakr/vim-one'
 Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
+Plug 'humanoid-colors/vim-humanoid-colorscheme'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'jaredgorski/spacecamp'
+Plug 'haishanh/night-owl.vim'
 
 call plug#end()
 
@@ -72,8 +77,12 @@ set spelllang=en,es
 set termguicolors
 set background=dark
 let g:one_allow_italics = 1
-colorscheme ayu
+"colorscheme ayu
 set updatetime=250
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
 
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
@@ -84,6 +93,7 @@ map <F3> :NERDTreeToggle<CR>
 " Airline config
 let g:airline#extensions#tabline#enabled = 1 " Only show opened buffers
 let g:airline#extensions#tabline#fnamemod = ':t'  " Show the name of the file
+let g:airline_theme = "tokyonight"
 
 " Load powerline font 
 let g:airline_powerline_fonts = 1
@@ -97,8 +107,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 
 let g:move_map_keys = 0
-map <C-Down> <Plug>MoveBlockDown
-map <C-Up> <Plug>MoveBlockUp
+map <A-Down> <Plug>MoveBlockDown
+map <A-Up> <Plug>MoveBlockUp
 
 " Git Gutter
 let g:gitgutter_highlight_linenrs = 1
