@@ -23,19 +23,16 @@ Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'matze/vim-move'
+Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
+Plug 'matze/vim-move' " Move block of code
+Plug 'APZelos/blamer.nvim'
+Plug 'preservim/tagbar'
 
 " Some themes
-Plug 'joshdick/onedark.vim'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'rakr/vim-one'
 Plug 'ayu-theme/ayu-vim'
-Plug 'morhetz/gruvbox'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'jaredgorski/spacecamp'
-Plug 'haishanh/night-owl.vim'
 
 call plug#end()
 
@@ -63,6 +60,8 @@ set nobackup
 set nowritebackup
 set cursorline
 set colorcolumn=120
+set textwidth=120
+set wrapmargin=2
 
 set tabstop=2
 set shiftwidth=2
@@ -105,7 +104,12 @@ let g:SuperTabDefaultCompletionType = '<c-n>'
 " Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
+nnoremap <leader>. :CtrlPTag<cr>
 
+" Tagbar
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+
+" Vim move
 let g:move_map_keys = 0
 map <A-Down> <Plug>MoveBlockDown
 map <A-Up> <Plug>MoveBlockUp
@@ -119,4 +123,7 @@ nnoremap <leader>hlnh :GitGutterLineNrHighlightsToggle<CR>
 " emmet config
 " let g:user_emmet_leader_key='<C-Z>'
 
-
+" Blamer config
+let g:blamer_enabled = 1
+let g:blamer_delay = 500
+let g:blamer_prefix = ' > '
