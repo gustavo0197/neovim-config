@@ -115,6 +115,8 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 let g:move_map_keys = 0
 map <A-Down> <Plug>MoveBlockDown
 map <A-Up> <Plug>MoveBlockUp
+map <A-Left> <Plug>MoveBlockLeft
+map <A-Right> <Plug>MoveBlockRight
 
 " Git Gutter
 let g:gitgutter_highlight_linenrs = 1
