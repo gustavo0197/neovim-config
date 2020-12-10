@@ -21,12 +21,16 @@ Plug 'jiangmiao/auto-pairs' " Complete '', (), {} or []
 Plug 'preservim/nerdcommenter' " Create comments
 Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
+Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
 "Plug 'ludovicchabant/vim-gutentags'
 Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
 Plug 'matze/vim-move' " Move block of code
 Plug 'APZelos/blamer.nvim'
 Plug 'preservim/tagbar'
+Plug 'Yggdroot/indentLine'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
@@ -92,7 +96,7 @@ map <F3> :NERDTreeToggle<CR>
 " Airline config
 let g:airline#extensions#tabline#enabled = 1 " Only show opened buffers
 let g:airline#extensions#tabline#fnamemod = ':t'  " Show the name of the file
-let g:airline_theme = "tokyonight"
+let g:airline_theme = "molokai"
 
 " Load powerline font 
 let g:airline_powerline_fonts = 1
@@ -113,6 +117,8 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 let g:move_map_keys = 0
 map <A-Down> <Plug>MoveBlockDown
 map <A-Up> <Plug>MoveBlockUp
+map <A-Left> <Plug>MoveBlockLeft
+map <A-Right> <Plug>MoveBlockRight
 
 " Git Gutter
 let g:gitgutter_highlight_linenrs = 1
@@ -127,3 +133,7 @@ nnoremap <leader>hlnh :GitGutterLineNrHighlightsToggle<CR>
 let g:blamer_enabled = 1
 let g:blamer_delay = 500
 let g:blamer_prefix = ' > '
+
+" indentLine
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_char = '┊'
