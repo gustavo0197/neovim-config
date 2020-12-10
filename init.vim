@@ -29,6 +29,8 @@ Plug 'matze/vim-move' " Move block of code
 Plug 'APZelos/blamer.nvim'
 Plug 'preservim/tagbar'
 Plug 'Yggdroot/indentLine'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
