@@ -21,7 +21,8 @@
     "typescriptreact",
     "javascriptreact",
     "typescript.tsx",
-    "scss",
-    "css"
+    "scs",
+    "css",
+    "java"
   ]
 }

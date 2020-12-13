@@ -25,6 +25,7 @@ Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
 "Plug 'ludovicchabant/vim-gutentags'
 Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
+Plug 'jparise/vim-graphql' " GraphQL plugin
 Plug 'matze/vim-move' " Move block of code
 Plug 'APZelos/blamer.nvim'
 Plug 'preservim/tagbar'
