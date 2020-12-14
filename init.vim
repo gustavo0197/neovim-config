@@ -50,6 +50,10 @@ nnoremap <leader>s :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>' :qa!<CR>
 nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>hr :resize 
+nnoremap <leader>vr :vertical resize 
+nnoremap <leader>vs :vsplit<CR>
+nnoremap <leader>hs :split<CR>
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
