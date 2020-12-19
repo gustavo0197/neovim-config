@@ -57,6 +57,7 @@ nnoremap <leader>hs :split<CR>
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
+nnoremap <A-S-p> :Ag<CR> 
 
 " Searcher mappings 
 map /  <Plug>(incsearch-forward)
