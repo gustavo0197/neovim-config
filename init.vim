@@ -15,7 +15,7 @@ let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', '
 " TypeScript and tsx support
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'ctrlpvim/ctrlp.vim' " File searcher
+"Plug 'ctrlpvim/ctrlp.vim' " File searcher
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs' " Complete '', (), {} or []
 Plug 'preservim/nerdcommenter' " Create comments
@@ -23,7 +23,6 @@ Plug 'haya14busa/incsearch.vim' " A better searcher
 Plug 'airblade/vim-gitgutter' " Git plugin
 Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'mattn/emmet-vim' " Emmet for html
-"Plug 'ludovicchabant/vim-gutentags'
 Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
 Plug 'jparise/vim-graphql' " GraphQL plugin
 Plug 'matze/vim-move' " Move block of code
@@ -37,7 +36,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
-Plug 'jaredgorski/spacecamp'
 
 call plug#end()
 
@@ -57,6 +55,7 @@ nnoremap <leader>hs :split<CR>
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
+nnoremap <C-p> :Files<CR>
 nnoremap <A-S-p> :Ag<CR> 
 
 " Searcher mappings 
@@ -91,7 +90,7 @@ set updatetime=250
 
 let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+colorscheme ayu
 
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
