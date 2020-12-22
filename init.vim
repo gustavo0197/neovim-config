@@ -135,10 +135,15 @@ nnoremap <leader>hlnh :GitGutterLineNrHighlightsToggle<CR>
 " let g:user_emmet_leader_key='<C-Z>'
 
 " Blamer config
-let g:blamer_enabled = 1
+let g:blamer_enabled = 0
 let g:blamer_delay = 500
 let g:blamer_prefix = ' > '
+nnoremap <leader>gbt :BlamerToggle<CR>
 
 " indentLine
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_char = '┊'
+
+" Coc config
+nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+nnoremap <nowait><expr> <C-g> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-g>"
