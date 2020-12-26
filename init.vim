@@ -92,6 +92,8 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 colorscheme ayu
 
+nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/init.vim<CR>
+
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
 
