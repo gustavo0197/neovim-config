@@ -52,6 +52,7 @@ nnoremap <leader>hr :resize
 nnoremap <leader>vr :vertical resize 
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>hs :split<CR>
+nnoremap <leader>ct :tabmove 
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
