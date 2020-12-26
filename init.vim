@@ -36,6 +36,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'gustavo0197/vim-theme'
 
 call plug#end()
 
@@ -91,7 +92,7 @@ set updatetime=250
 
 let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme ayu
+colorscheme yat
 
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
