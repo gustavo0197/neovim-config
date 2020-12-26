@@ -36,6 +36,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'gustavo0197/vim-theme'
 
 call plug#end()
 
@@ -52,6 +53,7 @@ nnoremap <leader>hr :resize
 nnoremap <leader>vr :vertical resize 
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>hs :split<CR>
+nnoremap <leader>ct :tabmove 
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
@@ -90,7 +92,7 @@ set updatetime=250
 
 let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme ayu
+colorscheme yat
 
 nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/init.vim<CR>
 
