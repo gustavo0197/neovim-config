@@ -94,7 +94,7 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 colorscheme yat
 
-nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/init.vim<CR>
+nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vim<CR>
 
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
@@ -124,10 +124,10 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 
 " Vim move
 let g:move_map_keys = 0
-map <A-Down> <Plug>MoveBlockDown
-map <A-Up> <Plug>MoveBlockUp
-map <A-Left> <Plug>MoveBlockLeft
-map <A-Right> <Plug>MoveBlockRight
+map <C-Down> <Plug>MoveBlockDown
+map <C-Up> <Plug>MoveBlockUp
+map <C-Left> <Plug>MoveBlockLeft
+map <C-Right> <Plug>MoveBlockRight
 
 " Git Gutter
 let g:gitgutter_highlight_linenrs = 1
