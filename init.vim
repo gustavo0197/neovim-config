@@ -15,6 +15,7 @@ let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', '
 " TypeScript and tsx support
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'pangloss/vim-javascript'
 "Plug 'ctrlpvim/ctrlp.vim' " File searcher
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs' " Complete '', (), {} or []
@@ -39,6 +40,9 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'gustavo0197/vim-theme'
 
 call plug#end()
+
+syntax keyword javaScriptReserved from async console require await
+syntax keyword ReduxHooksKeywords useRef useContext useReducer useSelector useDispatch useNavigate useParams
 
 let g:mapleader = ' ' " Use space as leader 
 
