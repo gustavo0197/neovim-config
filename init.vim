@@ -98,6 +98,7 @@ nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vi
 
 " Nerd tree config
 let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
+let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " Open/Close NERDTree using F3
 map <F3> :NERDTreeToggle<CR>
