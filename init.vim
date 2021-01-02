@@ -151,6 +151,7 @@ nnoremap <leader>gbt :BlamerToggle<CR>
 
 " indentLine
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_fileTypeExclude = ['json']
 let g:indentLine_char = '┊'
 
 " Coc config
