@@ -50,7 +50,7 @@ let g:mapleader = ' ' " Use space as leader
 
 "Save using leader + s
 nnoremap <leader>s :w<CR>
-nnoremap <leader>q :q<CR>
+nnoremap <leader>q :bd<CR>
 nnoremap <leader>' :qa!<CR>
 nnoremap <leader>tn :tabnew<CR>
 nnoremap <leader>hr :resize 
