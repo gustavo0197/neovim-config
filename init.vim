@@ -131,8 +131,8 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 let g:move_map_keys = 0
 map <C-Down> <Plug>MoveBlockDown
 map <C-Up> <Plug>MoveBlockUp
-map <C-Left> <Plug>MoveBlockLeft
-map <C-Right> <Plug>MoveBlockRight
+"map <C-Left> <Plug>MoveBlockLeft
+"map <C-Right> <Plug>MoveBlockRight
 
 " Git Gutter
 let g:gitgutter_highlight_linenrs = 1
@@ -151,8 +151,14 @@ nnoremap <leader>gbt :BlamerToggle<CR>
 
 " indentLine
 "let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_enabled = 1
+"let g:indentLine_fileType = ['html', 'ts', 'js']
+"let g:indentLine_setConceal = 0
+"let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_fileTypeExclude = ['json']
 let g:indentLine_char = '┊'
+"let g:indentLine_leadingSpaceChar = ' '
+"let g:indentLine_leadingSpaceChar = '·'
 
 " Coc config
 nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
