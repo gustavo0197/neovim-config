@@ -12,8 +12,8 @@
   ],
   "coc.preferences.enableFloatHighlight": true,
   "coc.preferences.floatActions": true,
-  "coc.preferences.diagnostic.virtualText": true,
-  "coc.preferences.formatOnInsertLeave": true,
+  "coc.preferences.enableMessageDialog": true,
+  "coc.preferences.hoverTarget": "preview",
   "prettier.requireConfig": true,
   "eslint.filetypes": [
     "javascript",
