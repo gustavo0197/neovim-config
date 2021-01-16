@@ -4,7 +4,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'scrooloose/nerdtree' " File explorer
 Plug 'xuyuanp/nerdtree-git-plugin' " Git plugin for nerdtree 
-Plug 'ryanoasis/vim-devicons' " Icons
 Plug 'vim-airline/vim-airline' " Custom status bar
 Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'ervandew/supertab' " Suggestions
@@ -32,6 +31,7 @@ Plug 'preservim/tagbar'
 Plug 'Yggdroot/indentLine'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
@@ -84,6 +84,7 @@ set softtabstop=2
 set shiftround
 set expandtab
 set noshowmode  " Don't show the current status
+set guifont=Hack\ Nerd\ Font\ Regular
 
 set ignorecase
 set spelllang=en,es
