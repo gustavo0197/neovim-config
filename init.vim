@@ -10,7 +10,7 @@ Plug 'ervandew/supertab' " Suggestions
 
 " Intellisense and syntax highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-angular', 'coc-eslint', 'coc-graphql']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-angular', 'coc-eslint']
 " Syntax hightlight
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -237,9 +237,11 @@ function! s:coc_float_scroll(amount) abort
   return ''
 endfunction
 
-let g:coc_snippet_next = '<c-l>'
-let g:coc_snippet_prev = '<c-h>'
-inoremap <silent><expr> <c-h> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-h>"
-inoremap <silent><expr> <c-m> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-m>"
-vnoremap <silent><expr> <c-h> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-h>"
-vnoremap <silent><expr> <c-m> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-m>"
+"let g:coc_snippet_next = '<c-l>'
+"let g:coc_snippet_prev = '<c-h>'
+inoremap <silent><expr> <Down> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<Down>"
+inoremap <silent><expr> <Up> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<Up>"
+"vnoremap <silent><expr> <c-k> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-k>"
+"vnoremap <silent><expr> <c-j> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-j>"
+"nnoremap <silent><expr> <c-k> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-k>"
+"nnoremap <silent><expr> <c-j> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-j>"

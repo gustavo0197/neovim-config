@@ -13,7 +13,7 @@
   "coc.preferences.enableFloatHighlight": true,
   "coc.preferences.floatActions": true,
   "coc.preferences.enableMessageDialog": true,
-  "coc.preferences.hoverTarget": "preview",
+  "coc.preferences.hoverTarget": "float",
   "prettier.requireConfig": true,
   "eslint.filetypes": [
     "javascript",
