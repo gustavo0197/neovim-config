@@ -239,9 +239,14 @@ endfunction
 
 "let g:coc_snippet_next = '<c-l>'
 "let g:coc_snippet_prev = '<c-h>'
-inoremap <silent><expr> <Down> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<Down>"
-inoremap <silent><expr> <Up> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<Up>"
-"vnoremap <silent><expr> <c-k> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-k>"
-"vnoremap <silent><expr> <c-j> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-j>"
-"nnoremap <silent><expr> <c-k> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<c-k>"
-"nnoremap <silent><expr> <c-j> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<c-j>"
+"inoremap <silent><expr> <Down> coc#float#has_float() ? <SID>coc_float_scroll(1) : "\<Down>"
+"inoremap <silent><expr> <Up> coc#float#has_float() ? <SID>coc_float_scroll(-1) : "\<Up>"
+
+let g:coc_snippet_next = '<c-l>'
+let g:coc_snippet_prev = '<c-h>'
+nnoremap <silent><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1, 1) : "\<c-j>"
+nnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0, 1) : "\<c-k>"
+inoremap <silent><expr> <c-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1, 1)\<cr>" : "\<c-j>"
+inoremap <silent><expr> <c-k> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0, 1)\<cr>" : "\<c-k>"
+vnoremap <silent><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1, 1) : "\<c-j>"
+vnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0, 1) : "\<c-k>"
