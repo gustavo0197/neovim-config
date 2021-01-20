@@ -14,7 +14,14 @@
   "coc.preferences.floatActions": true,
   "coc.preferences.enableMessageDialog": true,
   "coc.preferences.hoverTarget": "float",
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.previewMaxHeight": 10,
+  "coc.preferences.snippets.enable": true,
+  "coc.preferences.bracketEnterImprove": true,
   "prettier.requireConfig": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
   "eslint.filetypes": [
     "javascript",
     "typescript",
