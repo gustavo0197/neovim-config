@@ -87,7 +87,7 @@ nnoremap <leader>vr :vertical resize
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>hs :split<CR>
 nnoremap <leader>tm :tabmove 
-nnoremap <leader>sb :Buffers<CR>
+nnoremap <leader>ob :Buffers<CR>
 inoremap <C-v> <ESC>"+pa
 vnoremap <C-c> "+y
 vnoremap <C-d> "+d
