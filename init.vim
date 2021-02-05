@@ -34,6 +34,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'liuchengxu/vim-which-key'
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
@@ -213,3 +215,9 @@ vnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0, 1) : 
 
 " Snippets
 "imap <C-l> <Plug>(coc-snippets-expand)
+
+
+" =====================
+" |   Vim which key   |
+" =====================
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
