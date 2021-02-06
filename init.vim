@@ -3,6 +3,7 @@ source ~/.config/nvim/basic.vim
 " Plugins config
 source ~/.config/nvim/plugins-conf/coc.vim
 source ~/.config/nvim/plugins-conf/rnvimr.vim
+source ~/.config/nvim/plugins-conf/float-term.vim
 
 " ==============
 " |  Mappings  |
