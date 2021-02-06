@@ -1,6 +1,8 @@
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/basic.vim
+" Plugins config
 source ~/.config/nvim/plugins-conf/coc.vim
+source ~/.config/nvim/plugins-conf/rnvimr.vim
 
 " ==============
 " |  Mappings  |

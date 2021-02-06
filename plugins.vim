@@ -36,6 +36,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vim-which-key'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
