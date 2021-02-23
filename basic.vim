@@ -59,7 +59,7 @@ vnoremap <C-c> "+y
 " Cut
 vnoremap <C-d> "+d
 " Change shiftwidth
-nnoremap <leader>sw :set shiftwidth=
+nnoremap <leader>csw :set shiftwidth=
 
 " Vim yat theme development purposes
 "nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vim<CR>
