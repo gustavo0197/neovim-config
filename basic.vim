@@ -16,7 +16,7 @@ set softtabstop=2
 set shiftround
 set expandtab
 set noshowmode  " Don't show the current status
-set guifont=Hack\ Nerd\ Font\ Regular
+"set guifont=Hack
 
 set ignorecase
 set spelllang=en,es
