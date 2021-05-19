@@ -10,7 +10,7 @@ source ~/.config/nvim/plugins-conf/float-term.vim
 " ==============
 nnoremap <leader>ob :Buffers<CR>
 nnoremap <C-p> :Files<CR>
-nnoremap <A-S-p> :Ag<CR> 
+noremap <C-i> :Ag<CR>
 " Searcher 
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
