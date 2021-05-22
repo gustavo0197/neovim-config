@@ -38,7 +38,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'voldikss/vim-floaterm'
-Plug 'derekwyatt/vim-scala'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
