@@ -8,6 +8,8 @@ source ~/.config/nvim/plugins-conf/float-term.vim
 " ==============
 " |  Mappings  |
 " ==============
+" Load theme
+nnoremap <leader>l :source ~/development/vim-theme/colors/vivid.vim<CR>
 nnoremap <leader>ob :Buffers<CR>
 nnoremap <C-p> :Files<CR>
 noremap <C-i> :Ag<CR>

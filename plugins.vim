@@ -39,11 +39,13 @@ Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'voldikss/vim-floaterm'
 Plug 'derekwyatt/vim-scala'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'gustavo0197/vim-theme'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
