@@ -24,7 +24,7 @@ set spelllang=en,es
 set termguicolors
 set background=dark
 set updatetime=250
-colorscheme ayu
+colorscheme vivid
 
 " ==============
 " |  Mappings  |

@@ -2,8 +2,16 @@ snippet imr "Import react" b
 import React, { ${1:useState} } from "react";
 endsnippet
 
+snippet imm "Import module" b
+import {} from "${1:module}";
+endsnippet
+
+snippet imdm "Import default module" b
+import ${1:module} from "${2:module}";
+endsnippet
+
 snippet fcom "React fuction component" b
-const ${1:Component} = (): React.ReactElement => {
+const ${1:Component}: React.FC = () => {
 	return <div></div>;
 }
 endsnippet
