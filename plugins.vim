@@ -38,6 +38,7 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'voldikss/vim-floaterm'
 Plug 'derekwyatt/vim-scala'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
