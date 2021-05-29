@@ -11,7 +11,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-angular', 'coc-eslint', 'coc-snippets']
 " Syntax hightlight
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'maxmellon/vim-jsx-pretty'
+"Plug 'peitalin/vim-jsx-typescript'
 Plug 'pangloss/vim-javascript'
 Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
 Plug 'jparise/vim-graphql' " GraphQL plugin
@@ -38,7 +39,6 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'voldikss/vim-floaterm'
 Plug 'derekwyatt/vim-scala'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'maxmellon/vim-jsx-pretty'
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
