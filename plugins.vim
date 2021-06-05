@@ -2,8 +2,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 " Plugins to install here
 
-Plug 'scrooloose/nerdtree' " File explorer
-Plug 'xuyuanp/nerdtree-git-plugin' " Git plugin for nerdtree 
+"Plug 'scrooloose/nerdtree' " File explorer
+"Plug 'xuyuanp/nerdtree-git-plugin' " Git plugin for nerdtree 
 Plug 'vim-airline/vim-airline' " Custom status bar
 Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'ervandew/supertab' " Suggestions

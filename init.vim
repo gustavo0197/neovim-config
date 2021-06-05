@@ -16,14 +16,16 @@ map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
+" export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,build/*,dist/*,build-dev/*,.parcel-cache/*,.cache/*}"'
+
 " ======================
 " |  Nerd tree config  |
 " ======================
-let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
-let g:NERDTreeGitStatusUseNerdFonts = 1
+"let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
+"let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " Open/Close NERDTree using F3
-map <F3> :NERDTreeToggle<CR>
+"map <F3> :NERDTreeToggle<CR>
 
 " ====================
 " |  Airline config  |
