@@ -8,24 +8,17 @@ source ~/.config/nvim/plugins-conf/float-term.vim
 " ==============
 " |  Mappings  |
 " ==============
+" Load theme
+nnoremap <leader>l :source ~/development/vim-theme/colors/vivid.vim<CR>
 nnoremap <leader>ob :Buffers<CR>
 nnoremap <C-p> :Files<CR>
-nnoremap <A-S-p> :Ag<CR> 
+noremap <C-i> :Ag<CR>
 " Searcher 
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 nnoremap <Esc><Esc> :<C-u>nohlsearch<CR>
 
 " export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,build/*,dist/*,build-dev/*,.parcel-cache/*,.cache/*}"'
-
-" ======================
-" |  Nerd tree config  |
-" ======================
-"let g:NERDTreeChDirMode = 2  " Cambia el directorio actual al nodo padre actual
-"let g:NERDTreeGitStatusUseNerdFonts = 1
-
-" Open/Close NERDTree using F3
-"map <F3> :NERDTreeToggle<CR>
 
 " ====================
 " |  Airline config  |

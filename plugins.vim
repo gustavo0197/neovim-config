@@ -2,8 +2,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 " Plugins to install here
 
-"Plug 'scrooloose/nerdtree' " File explorer
-"Plug 'xuyuanp/nerdtree-git-plugin' " Git plugin for nerdtree 
 Plug 'vim-airline/vim-airline' " Custom status bar
 Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'ervandew/supertab' " Suggestions
@@ -13,7 +11,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-angular', 'coc-eslint', 'coc-snippets']
 " Syntax hightlight
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'maxmellon/vim-jsx-pretty'
+"Plug 'peitalin/vim-jsx-typescript'
 Plug 'pangloss/vim-javascript'
 Plug 'joukevandermaas/vim-ember-hbs' " Plugin for HBS files
 Plug 'jparise/vim-graphql' " GraphQL plugin
@@ -39,11 +38,13 @@ Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'voldikss/vim-floaterm'
 Plug 'derekwyatt/vim-scala'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " Some themes
 Plug 'ayu-theme/ayu-vim'
 Plug 'humanoid-colors/vim-humanoid-colorscheme'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'gustavo0197/vim-theme'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
