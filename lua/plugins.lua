@@ -51,3 +51,4 @@ vim.cmd("Plug 'sonph/onehalf', { 'rtp': 'vim' }")
 vf.plug['end']()
 
 -- TODO require config files here
+require('plugins.coc')
