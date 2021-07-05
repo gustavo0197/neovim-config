@@ -52,3 +52,5 @@ vf.plug['end']()
 
 -- TODO require config files here
 require('plugins.coc')
+require('plugins.float-term')
+require('plugins.rnvimr')
