@@ -17,6 +17,7 @@ vim.cmd("Plug 'maxmellon/vim-jsx-pretty'")
 vim.cmd("Plug 'pangloss/vim-javascript'")
 vim.cmd("Plug 'joukevandermaas/vim-ember-hbs'") -- Plugin for HBS files
 vim.cmd("Plug 'jparise/vim-graphql'") -- GraphQL plugin
+vim.cmd("Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }") -- Go plugin
 
 vim.cmd("Plug 'tpope/vim-surround'")
 vim.cmd("Plug 'jiangmiao/auto-pairs'") -- Complete '', (), {} or []
