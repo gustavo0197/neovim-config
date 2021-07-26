@@ -8,16 +8,15 @@ options = { noremap = true }
 -- nnoremap <nowait><expr> <C-g> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-g>"
 
 -- GoTo code navigation.
--- nmap <silent> gd <Plug>(coc-definition)
---nmap <silent> gy <Plug>(coc-type-definition)
---nmap <silent> gi <Plug>(coc-implementation)
--- nmap <silent> gr <Plug>(coc-references)
+map('n', 'gd', '<Plug>(coc-definition)', { silent = true })
+map('n', 'gy', '<Plug>(coc-type-definition)', { silent = true })
+map('n', 'gi', '<Plug>(coc-implementation)', { silent = true })
+map('n', 'gr', '<Plug>(coc-references)', { silent = true })
 
 -- Symbol renaming.
 map('n', '<leader>rn', '<Plug>(coc-rename)', {})
 
 -- Use K to show documentation in preview window.
--- map('n', '<leader>rn', '<Plug>(coc-rename)', {})
 -- nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 --[[ function! s:show_documentation()
