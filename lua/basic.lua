@@ -66,6 +66,15 @@ map('v', '<C-d>', '"+d', options)
 -- Change shiftwidth
 map('n', '<leader>csw', ':set shiftwidth=', options)
 
+-- nnoremap <leader>l :source ~/development/vim-theme/colors/vivid.vim<CR>
+map('n', '<leader>ob', ':Buffers<CR>', options)
+map('n', '<C-p>', ':Files<CR>', options)
+map('n', '<C-i>', ':Ag<CR>', options)
+-- Searcher
+map('', '/ ', '<Plug>(incsearch-forward)', options)
+map('', '? ', '<Plug>(incsearch-backward)', options)
+map('n', '<Esc><Esc>', ':<C-u>nohlsearch<CR>', options)
+
 -- Vim yat theme development purposes
 -- map('n', '<leader>l', ':source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vim<CR>', options)
 -- nnoremap <leader>l :source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vim<CR>
