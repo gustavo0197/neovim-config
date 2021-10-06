@@ -19,6 +19,7 @@ vim.cmd('set shiftround')
 vim.cmd('set expandtab')
 vim.cmd('set noshowmode')  -- Don't show the current status
 vim.cmd('set guifont=Hack')
+vim.cmd('set autoread')
 
 vim.cmd('set ignorecase')
 vim.cmd('set spelllang=en,es')

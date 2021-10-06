@@ -41,6 +41,7 @@ vim.cmd("Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}")
 vim.cmd("Plug 'voldikss/vim-floaterm'")
 vim.cmd("Plug 'derekwyatt/vim-scala'")
 vim.cmd("Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }")
+vim.cmd("Plug 'djoshea/vim-autoread'")
 
 -- Some themes
 vim.cmd("Plug 'ayu-theme/ayu-vim'")
