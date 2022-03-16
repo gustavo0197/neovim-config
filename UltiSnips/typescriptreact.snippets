@@ -16,6 +16,20 @@ const ${1:Component}: React.FC = () => {
 }
 endsnippet
 
+snippet efcom "Export React fuction component" b
+export const ${1:Component}: React.FC = () => {
+	return <div></div>;
+}
+endsnippet
+
+snippet enfcom "Export React fuction component" b
+export const ${1:Component}: React.FC<Props> = () => {
+	return <div></div>;
+}
+
+interface Props {}
+endsnippet
+
 snippet ccom "React class component" b
 class ${1:Component} extends React.Component {
 	render() {

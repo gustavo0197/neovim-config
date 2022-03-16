@@ -17,6 +17,7 @@ map('n', 'gr', '<Plug>(coc-references)', { silent = true })
 map('n', '<leader>rn', '<Plug>(coc-rename)', {})
 
 -- Use K to show documentation in preview window.
+-- map('n', '<silent> K', ':call <SID>show_documentation()<CR>', { silent = true })
 -- nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 --[[ function! s:show_documentation()

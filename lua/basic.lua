@@ -72,7 +72,7 @@ map('n', '<leader>ob', ':Buffers<CR>', options)
 map('n', '<C-p>', ':Files<CR>', options)
 map('n', '<C-i>', ':Ag<CR>', options)
 -- Searcher
-map('', '/ ', '<Plug>(incsearch-forward)', options)
+-- map('', '/ ', '<Plug>(incsearch-forward)', options)
 map('', '? ', '<Plug>(incsearch-backward)', options)
 map('n', '<Esc><Esc>', ':<C-u>nohlsearch<CR>', options)
 
