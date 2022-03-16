@@ -17,7 +17,7 @@ map('n', 'gr', '<Plug>(coc-references)', { silent = true })
 map('n', '<leader>rn', '<Plug>(coc-rename)', {})
 
 -- Use K to show documentation in preview window.
--- map('n', '<silent> K', ':call <SID>show_documentation()<CR>', { silent = true })
+map('n', 'K', ':call CocActionAsync("doHover")<CR>', { silent = true, noremap = true })
 -- nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 --[[ function! s:show_documentation()
@@ -32,6 +32,8 @@ endfunction ]]
 
 vim.g.coc_snippet_next = '<c-l>'
 vim.g.coc_snippet_prev = '<c-h>'
+map('n', '<C-j>', '[[coc#float#has_scroll() ? coc#float#scroll(1, 1) : "<C-j>"]]', { noremap = true, silent = true, expr = true })
+map('n', '<C-k>', '[[coc#float#has_scroll() ? coc#float#scroll(0, 1) : "<C-k>"]]', { noremap = true, silent = true, expr = true })
 -- nnoremap <silent><expr> <c-j> coc#float#has_scroll() ? coc#float#scroll(1, 1) : "\<c-j>"
 -- nnoremap <silent><expr> <c-k> coc#float#has_scroll() ? coc#float#scroll(0, 1) : "\<c-k>"
 -- inoremap <silent><expr> <c-j> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1, 1)\<cr>" : "\<c-j>"
