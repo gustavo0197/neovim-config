@@ -27,7 +27,7 @@ vim.cmd('set spelllang=en,es')
 vim.cmd('set termguicolors')
 vim.cmd('set background=dark')
 vim.cmd('set updatetime=250')
-vim.cmd('colorscheme yat')
+vim.cmd('colorscheme purify')
 
 --==============
 --|  Mappings  |
@@ -75,6 +75,12 @@ map('n', '<C-i>', ':Ag<CR>', options)
 -- map('', '/ ', '<Plug>(incsearch-forward)', options)
 map('', '? ', '<Plug>(incsearch-backward)', options)
 map('n', '<Esc><Esc>', ':<C-u>nohlsearch<CR>', options)
+
+-- Buffer
+map('n', '≤', ':BufferPrevious<CR>', { noremap = true, silent = true })
+map('n', '≥', ':BufferNext<CR>', { noremap = true, silent = true })
+map('n', '¯', ':BufferMovePrevious<CR>', { noremap = true, silent = true })
+map('n', '˘', ':BufferMoveNext<CR>', { noremap = true, silent = true })
 
 -- Vim yat theme development purposes
 -- map('n', '<leader>l', ':source /home/gustavo/develop/gensoft/vim-theme/colors/yat.vim<CR>', options)
