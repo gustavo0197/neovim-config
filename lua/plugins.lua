@@ -53,6 +53,7 @@ vim.cmd("Plug 'lukas-reineke/indent-blankline.nvim'")
 vim.cmd("Plug 'nvim-lualine/lualine.nvim'")
 vim.cmd("Plug 'kyazdani42/nvim-tree.lua'")
 vim.cmd("Plug 'sindrets/diffview.nvim'")
+vim.cmd("Plug 'nanotech/jellybeans.vim'")
 
 -- Some themes
 vim.cmd("Plug 'ayu-theme/ayu-vim'")
