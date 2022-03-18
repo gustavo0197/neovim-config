@@ -54,6 +54,7 @@ vim.cmd("Plug 'nvim-lualine/lualine.nvim'")
 vim.cmd("Plug 'kyazdani42/nvim-tree.lua'")
 vim.cmd("Plug 'sindrets/diffview.nvim'")
 vim.cmd("Plug 'nanotech/jellybeans.vim'")
+vim.cmd("Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}")
 
 -- Some themes
 vim.cmd("Plug 'ayu-theme/ayu-vim'")
