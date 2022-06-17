@@ -27,7 +27,7 @@ vim.cmd('set spelllang=en,es')
 vim.cmd('set termguicolors')
 vim.cmd('set background=dark')
 vim.cmd('set updatetime=250')
-vim.cmd('colorscheme jellybeans')
+vim.cmd('colorscheme bogster')
 
 --==============
 --|  Mappings  |

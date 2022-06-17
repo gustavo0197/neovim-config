@@ -63,5 +63,6 @@ vim.cmd("Plug 'ghifarit53/tokyonight-vim'")
 vim.cmd("Plug 'gustavo0197/vim-theme'")
 vim.cmd("Plug 'sonph/onehalf', { 'rtp': 'vim' }")
 vim.cmd("Plug 'kyoz/purify', { 'rtp': 'vim' }")
+vim.cmd("Plug 'vv9k/bogster'")
 
 vf.plug['end']()
