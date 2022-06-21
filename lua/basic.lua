@@ -56,8 +56,6 @@ map('n', '<leader>vr', ':vertical resize ', options)
 map('n', '<leader>vs', ':vsplit<CR>', options)
 -- Horizontal split
 map('n', '<leader>hs', ':split<CR>', options)
--- Move tab
-map('n', '<leader>tm', ':tabmove ', options)
 -- Paste
 map('i', '<C-v>', '<ESC>"+pa>', options)
 -- Copy
@@ -68,12 +66,7 @@ map('v', '<C-d>', '"+d', options)
 map('n', '<leader>csw', ':set shiftwidth=', options)
 
 -- nnoremap <leader>l :source ~/development/vim-theme/colors/vivid.vim<CR>
-map('n', '<leader>ob', ':Buffers<CR>', options)
-map('n', '<C-p>', ':Files<CR>', options)
-map('n', '<C-i>', ':Ag<CR>', options)
 -- Searcher
--- map('', '/ ', '<Plug>(incsearch-forward)', options)
-map('', '? ', '<Plug>(incsearch-backward)', options)
 map('n', '<Esc><Esc>', ':<C-u>nohlsearch<CR>', options)
 
 -- Buffer
